@@ -12,7 +12,7 @@ public class ShoppingCart {
     }
 
     public void add(int quantity, Fruit fruit) {
-        double itemCost = quantity * fruitCatalog.costOf(fruit);
+        double itemCost = fruitCatalog.costOf(fruit,quantity);
         items.add(new ShoppingCartItem(fruit.name(), quantity, itemCost));
     }
 
